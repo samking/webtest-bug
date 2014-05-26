@@ -8,13 +8,13 @@ by:
 
 * Installing the Google Cloud SDK (https://developers.google.com/cloud/sdk/)
 * Running `dev_appserver.py .` while in the app directory
-* Going to http://localhost:8080/ and verifying that that the path `/` is
-  printed and that `not set` is not printed.
+* Going to [http://localhost:8080/](http://localhost:8080/) and verifying that
+  that the path `/` is printed and that `not set` is not printed.
 
 You can verify that `os.environ.PATH_INFO` is NOT set in a webtest environment
 by:
 
-* Installing webapp2 (eg, `easy_install webapp2`)
+* Installing webapp2 and webtest
 * Running `python test.py` and verifying that the test doesn't pass.
 
 Note that if you uncomment the `path_info = self.request.path_info` line, the
