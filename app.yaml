@@ -1,0 +1,13 @@
+application: webtest-bug
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: server.APP
+
+libraries:
+- name: webapp2
+  version: latest
